@@ -4,4 +4,4 @@ node_js:
 before_install:
   - cd mock
 script:
-  - npm run test
+  - npm run lint
