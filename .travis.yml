@@ -6,4 +6,5 @@ jobs:
   include:
     - stage: "Mock"
       name: "Mock service"
-      script: cd mock && npm run lint
+      before_script: cd mock && npm ci
+      script: npm run lint
