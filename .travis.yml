@@ -1,7 +1,9 @@
 language: node_js
 node_js:
   - "lts/*"
-before_install:
-  - cd mock
-script:
-  - npm run lint
+
+jobs:
+  include:
+    - stage: "Mock"
+      name: "Mock service"
+      script: cd mock && npm run lint
