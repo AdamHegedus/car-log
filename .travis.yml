@@ -1,7 +1,11 @@
 language: node_js
 node_js:
   - "lts/*"
-
+addons:
+  sonarcloud:
+    organization: "adamhegedus"
+    token:
+      secure: bc7db86462781d586efa1beb17c9cd7238e16293
 jobs:
   include:
     - stage: "Mock"
@@ -11,3 +15,4 @@ jobs:
         - npm run lint
         - npm run test:clean
         - npm run test
+        - sonar-scanner
