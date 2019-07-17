@@ -17,4 +17,4 @@ jobs:
         - npm run lint
         - npm run test:clean
         - npm run test
-        - cd ../ sonar-scanner
+        - cd ../ && sonar-scanner
