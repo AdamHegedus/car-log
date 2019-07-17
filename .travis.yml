@@ -9,4 +9,5 @@ jobs:
       before_install: cd mock
       script: 
         - npm run lint
+        - npm run test:clean
         - npm run test
