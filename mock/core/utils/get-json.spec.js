@@ -1,7 +1,9 @@
 import fs from 'fs';
 import getJson from './get-json';
 
-jest.spyOn(fs, 'readFile');
+jest.mock('fs', () => ({
+  readFile: jest.fn(),
+}));
 jest.mock('./response-handler', () => () => {});
 
 describe('getJson', () => {
