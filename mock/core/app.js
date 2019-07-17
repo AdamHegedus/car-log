@@ -3,11 +3,11 @@ import getJson from './utils/get-json';
 
 const app = express();
 
-app.get('/', (req, res) => res.send('Mock service for car log application.'));
+app.get('/', (request, response) => response.send('Mock service for car log application.'));
 
-app.get('/test', (req, res) => {
+app.get('/test', (request, response) => {
   const path = 'data/test.json';
-  getJson(path, res);
+  getJson(path, response);
 });
 
 export default app;
