@@ -1,5 +1,5 @@
 import cors from 'cors';
-import app from './core/app';
+import app from './src/app';
 
 const port = 9999;
 app.use(cors());

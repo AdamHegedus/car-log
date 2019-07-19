@@ -2,9 +2,9 @@
   "name": "mock",
   "version": "1.0.0",
   "description": "Mock service for Car Log application",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "babel-node index.js",
+    "start": "babel-node server.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "jest --coverage",
